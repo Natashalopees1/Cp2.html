@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background-color: rgb(41, 41, 41);
+}
+
+
+
+#header{
+  top: 0;
+  left: 0;
+  padding: 30px 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  background-color: rgb(26, 26, 26);
+}
+
+#header .logo{
+  color: red;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+#header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header ul li{
+  list-style: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+#header ul li a{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: ghostwhite;
+  border-radius: 2px;
+}
+
+#header ul li a:hover{
+  background: linear-gradient(45deg, red, rgb(245, 14, 122));
+  color: rgb(253, 252, 252);
+}
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 10rem;
+}
+
+.image-box {
+  position: relative;
+}
+
+.image-box a {
+  display: block; /* Torna o link a ocupar todo o espaço da div */
+}
+
+.image-box a img {
+  width: 15rem;
+  height: 25rem;
+  display: block; /* Garante que a imagem se comporte corretamente */
+}
+
+.image-box:hover {
+  background-color: red;
+  box-shadow: 0 0 20px 5px rgba(116, 116, 116, 0.8); /* Adiciona um brilho com sombra em volta da caixa */
+
+}

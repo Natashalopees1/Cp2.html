@@ -6,7 +6,13 @@
 }
 
 
+body{
+    background-image: url(../img/layered-waves-haikei.svg);
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço da seção */
 
+    background-color: rgb(34, 34, 34);
+ 
+}
 
 #header{
     top: 0;
@@ -51,63 +57,44 @@
     color: rgb(253, 252, 252);
   }
 
-section{
-width: 100%;
-height: 100vh;
-display: flex;
-background-image: url("..//img/peaky-blinders.jpeg");
-background-size: cover;
-}
-iframe {
-    margin-left: 10rem;
-    margin-top: 7rem;
-    width: 35rem;
-    height: 25rem;
-}
-.box {
+  section {
+    top: 10rem;
+    position: relative;
+    background-color: rgb(25, 25, 25);
+    border-radius: 10px;
+    width: 50%;
+    padding: 100px 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding-left: 10rem;
-    padding-top: 10rem;
-}
+    justify-content: center;
 
-section img {
-    width: 16rem;
-}
+  }
 
-.button a{
+  section form {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      gap: 20px;
+      color: white;
+      
+  }
+  section form .form-input {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
 
-    color: white;
-    margin: 10px;
-    font-weight: 500;
-}
+  .form-input input {
+      height: 35px;
+  }
 
-.button a i:hover{
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-.button a i{
-    font-size: 30px;
-    padding: 14px 26px;
-    border-radius: 2px;
-    transition: 0.5s;
-    background-color: red;
-}
-.details span:last-child{
-    border: 1px solid rgb(242, 51, 51);
-    padding: 5px;
-    border-radius: 2px;
-    font-size: 12px;
-    background-color: red;
-    color: white;
-}   
-
-.button a i:hover{
-    opacity: 0.9;
-    cursor: pointer;
-}
-.details {
-    color: white;
-}
+  #button {
+      height: 35px;
+      border-radius: 5px;
+      border-style: none;
+      color: white;
+      font-weight: 800;
+      background: linear-gradient(45deg, red, rgb(245, 14, 122));
+    }
